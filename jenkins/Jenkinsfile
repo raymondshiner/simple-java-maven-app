@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent any
     stages {
         stage('Build') {
@@ -19,11 +19,6 @@ pipeline {
         stage('Deliver') {
             steps {
                 echo "This is the deliver step"
-            }
-        }
-        stage("Complete") {
-            steps {
-                echo "Job Complete!"
             }
         }
     }
